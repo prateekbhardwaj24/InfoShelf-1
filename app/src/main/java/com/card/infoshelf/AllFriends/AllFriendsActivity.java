@@ -1,5 +1,5 @@
 package com.card.infoshelf.AllFriends;
-
+//this is fork
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -112,7 +112,6 @@ public class AllFriendsActivity extends AppCompatActivity {
                                 }
                             });
                         }
-
 
 
                     }
