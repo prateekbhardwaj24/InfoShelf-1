@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BottomSheetStyle" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Modal</item>
+
+    </style>
+
+    <style name="Modal" parent="Widget.Design.BottomSheet.Modal">
+
+        <item name="android:background">@drawable/sheet_bg</item>
+    </style>
+
+</resources>

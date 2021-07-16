@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@drawable/createaccount">
+
+
+    <TextView
+        android:id="@+id/i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="i"
+        android:shadowColor = "#000"
+        android:shadowDx = "10"
+        android:shadowDy = "10"
+        android:shadowRadius = "2"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:textSize="90sp"/>
+
+    <TextView
+        android:id="@+id/infoshelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Shelf"
+        android:layout_toRightOf="@id/i"
+        android:layout_toEndOf="@id/i"
+        android:shadowColor="@color/black"
+        android:layout_centerVertical="true"
+        android:shadowDx = "10"
+        android:shadowDy = "10"
+        android:shadowRadius = "2"
+        android:fontFamily="@font/baloo_bhai"
+        android:textSize="80sp"/>
+
+    <ImageView
+        android:id="@+id/hat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hat"
+        android:layout_above="@id/i"
+        android:rotation="-20"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="-65dp"
+        />
+
+
+</RelativeLayout>

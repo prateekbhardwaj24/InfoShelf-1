@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    tools:context=".AboutActivity"
+    android:background="@drawable/two">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:gravity="center"
+        android:layout_centerVertical="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/infoshelficon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InfoShelf V1.0"
+            android:textSize="18sp"
+            android:textColor="#007a4a"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 7.21.1.0"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#InfoShelf#"
+            android:textSize="12sp"
+            android:textColor="#03A9F4"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:id="@+id/license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LICENSES"
+            android:textSize="16sp"
+            android:textColor="#03A9F4"
+            android:layout_marginTop="6dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect with us on"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/artifika"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/facebooklogo"/>
+        <ImageView
+            android:id="@+id/ig"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/instalogo"/>
+        <ImageView
+            android:id="@+id/tw"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/twitterlogo"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

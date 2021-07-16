@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/createanimeaccount"
+    tools:context=".loginandsignIn.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:orientation="vertical"
+            android:background="@drawable/createcard">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:hint="    Username"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="#007a4a"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextColor="#007a4a"
+
+
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_userName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+
+                            android:drawableStart="@drawable/username"
+                            android:drawablePadding="10dp"
+                            android:gravity="start"
+                            android:inputType="textCapWords"
+                            android:padding="10dp"
+                            android:textColor="#4CAF50" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:hint="    Email"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="#007a4a"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextColor="#007a4a"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_userName"
+                            android:layout_margin="10dp"
+
+                            android:drawableStart="@drawable/email"
+                            android:drawablePadding="10dp"
+
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:textColor="#4CAF50" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:hint="    Password"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="#007a4a"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:passwordToggleEnabled="true"
+                        app:hintTextColor="#007a4a"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_email"
+                            android:layout_margin="10dp"
+                            android:drawableStart="@drawable/pass"
+                            android:drawablePadding="10dp"
+                            android:inputType="textPassword"
+                            android:padding="10dp"
+                            android:textColor="#4CAF50" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:hint="    Confirm Password"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="#007a4a"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:passwordToggleEnabled="true"
+                        app:hintTextColor="#007a4a"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_confirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/et_password"
+                            android:layout_margin="10dp"
+                            android:drawableStart="@drawable/pass"
+                            android:drawablePadding="10dp"
+                            android:inputType="textPassword"
+                            android:padding="10dp"
+                            android:textColor="#4CAF50" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/btn_create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/et_confirmPassword"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="20dp"
+                        android:background="#007a4a"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="Create Account "
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_have_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_create"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/baloo_chettan"
+                        android:padding="10dp"
+                        android:text="Already Have An Account ?"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

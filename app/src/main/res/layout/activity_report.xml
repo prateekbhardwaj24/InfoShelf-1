@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportAndSuggestions.reportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report bug/Suggestions"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/baloo_bhai"
+            android:textSize="28sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Your suggestions/responses are appreciable, Please provide genuine 'BUG' report or any suggestions related to media content, We will surely try to solve as soon as possible"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Your Email"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#007a4a"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="#007a4a">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapSentences|textEmailAddress"
+                android:focusable="false"
+                android:clickable="false"
+                android:id="@+id/ReporterEmail"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="#4CAF50" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Subject"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#007a4a"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="#007a4a">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapSentences"
+                android:singleLine="false"
+                android:id="@+id/Subject"
+                android:drawableStart="@drawable/ic_baseline_subject_24"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="#4CAF50"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Explanation"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#007a4a"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="#007a4a">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minLines="5"
+                android:gravity="top|left"
+                android:id="@+id/Explanation"
+                android:ellipsize="end"
+                android:padding="10dp"
+                android:textColor="#4CAF50"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/submitReport"
+            android:layout_marginTop="25dp"
+            android:text="Submit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your submitted reports are safe and encrypted to ensure your privacy, Please submit genuine information."
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+</ScrollView>

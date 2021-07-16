@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_timeline_id"
+    android:layout_height="match_parent"
+    tools:context=".bottomfragment.TimelineFragment">
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        android:background="@drawable/grad5"-->
+<!--        app:title="Timeline"-->
+<!--        app:titleMarginStart="40dp"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#007a4a"
+        android:padding="8dp"
+        android:id="@+id/top_data">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chat_background"
+            android:src="@drawable/filter"
+            app:tint="#fff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/almendra_sc"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="InfoShelf" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            >
+
+        <ImageView
+            android:id="@+id/messeger"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="6dp"
+            android:background="@drawable/chat_background"
+            android:src="@drawable/messenger"
+            app:tint="#fff" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="20dp"
+            android:minHeight="20dp"
+            android:layout_alignParentRight="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/noti_back"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/newPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#03A9F4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/top_data"
+        android:layout_marginTop="4dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_marginRight="4dp"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_baseline_arrow_upward_24"
+        android:text="New Timeline"/>
+
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/top_data"-->
+<!--        >-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_data">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/storiesRecycler"
+                android:visibility="gone"
+                android:layout_margin="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postRecycler"
+                android:layout_marginBottom="70dp"
+                android:visibility="gone"
+                android:layout_below="@+id/storiesRecycler" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/allPostRecyclerView"
+                android:layout_marginBottom="70dp"
+                android:visibility="gone"
+                android:layout_below="@+id/postRecycler" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+</RelativeLayout>

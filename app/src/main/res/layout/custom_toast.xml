@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/custom_toast_layout"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/ToastImage"
+        android:layout_gravity="center"
+        android:src="@drawable/infoshelficon"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ToastText"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Every user will get the notification of this post"
+        android:layout_centerHorizontal="true"/>
+
+</LinearLayout>

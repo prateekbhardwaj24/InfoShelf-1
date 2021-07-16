@@ -1,0 +1,4 @@
+include ':NativeTemplatesAndroid-1.0.0'
+include ':nativetemplates'
+include ':app'
+rootProject.name = "InfoShelf"

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#f2f7fb"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="centerCrop"
+            android:id="@+id/coverProfile"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/transparent_layout"
+                android:layout_weight="50">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/usernames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="USERNAME"
+                        android:textSize="15dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/userInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usernames"
+                        android:textSize="10sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/statusLayout"
+                        android:layout_below="@+id/userInfo">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/eye"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/story_view"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/eye"
+                                android:layout_marginLeft="10dp"
+                                android:text="Visits"/>
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginRight="20dp"
+                                android:maxLines="1"
+                                android:textSize="13sp"
+                                android:ellipsize="end"
+                                android:id="@+id/userstatus"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/statusLayout"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/accept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="12dp"
+                            android:paddingLeft="12dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:drawableEnd="@drawable/accept"
+                            android:textColor="@color/white"
+                            android:background="@drawable/grad5"
+                            android:layout_centerHorizontal="true"
+                            />
+                        <TextView
+                            android:id="@+id/reject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="12dp"
+                            android:paddingLeft="12dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="10dp"
+                            android:drawableEnd="@drawable/cancle"
+                            android:textColor="@color/white"
+                            android:background="@drawable/grad5"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:elevation="100dp"
+            android:scaleType="centerCrop"
+
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
